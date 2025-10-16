@@ -29,8 +29,7 @@ Before running this project, make sure you have the following installed:
 
 ---
 
-## 🧩 Project Structure
-
+## Project Structure
 content-seo-check-fe/
 ├── public/                 # Static frontend files
 │   ├── index.html          # Main HTML
