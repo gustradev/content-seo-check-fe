@@ -29,7 +29,8 @@ Before running this project, make sure you have the following installed:
 
 ---
 
-## Project Structure
+#### Project Structure Rules
+```
 content-seo-check-fe/
 ├── public/                 # Static frontend files
 │   ├── index.html          # Main HTML
@@ -46,7 +47,7 @@ content-seo-check-fe/
 ├── .gitignore              # Ignore node_modules, logs, env, etc.
 ├── package.json            # Node dependencies & scripts
 └── README.md               # Project info & instructions
-
+```
 ---
 
 ## ⚙️ Setup Instructions
@@ -98,5 +99,5 @@ Ida Bagus Wisnu Suputra
 MIT License © 2025 — Ida Bagus Wisnu Suputra
 
 ---
-
+```
 Would you like me to add a **“Contributing”** section next (so later when you make the backend repo, collaborators can follow your workflow)?
