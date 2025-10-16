@@ -9,9 +9,10 @@ const app = express();
 // Middleware
 app.use(express.json());
 
-// Serve static frontend from /public
-const publicDir = path.join(__dirname, 'public');
+// server/server.js
+const publicDir = path.join(__dirname, '..', 'public');
 app.use(express.static(publicDir));
+
 
 // Health check route
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
@@ -58,7 +59,7 @@ app.post('/api/analyze', async (req, res) => {
   res.json(response);
 });
 
-// Fallback: serve index.html for SPA routes
+// fallback for SPA routes
 app.use((req, res) => {
   res.sendFile(path.join(publicDir, 'index.html'));
 });

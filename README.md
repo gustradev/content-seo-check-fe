@@ -32,11 +32,21 @@ Before running this project, make sure you have the following installed:
 ## 🧩 Project Structure
 
 content-seo-check-fe/
-├── public/ # Frontend static files (HTML, CSS, JS)
-├── server.js # Express app entry point
-├── package.json # Node dependencies & scripts
-└── .env # Environment variables (optional)
-
+├── public/                 # Static frontend files
+│   ├── index.html          # Main HTML
+│   ├── style.css           # Styles
+│   └── app.js              # Frontend JS
+│
+├── src/                    # Optional: for future React/TS or modular JS
+│   └── utils/              # Helper functions (if needed)
+│
+├── server/                 # Express server code
+│   └── server.js           # Server entry point
+│
+├── .env                    # Environment variables (optional)
+├── .gitignore              # Ignore node_modules, logs, env, etc.
+├── package.json            # Node dependencies & scripts
+└── README.md               # Project info & instructions
 
 ---
 
