@@ -52,8 +52,9 @@ content-seo-check-fe/
 
 ## ⚙️ Setup Instructions
 
-1️⃣ Install dependencies
+
 ```bash
+1️⃣ Install dependencies
 npm install
 
 2️⃣ Run the development server
