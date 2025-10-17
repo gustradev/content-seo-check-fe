@@ -169,3 +169,53 @@ footer a:hover {
 .hidden {
     display: none;
 }
+
+/* ===== Result Table ===== */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(1, 102, 255, 0.05);
+}
+
+.result-table thead {
+    background-color: #f1f5ff; /* soft blue tint for header */
+}
+
+.result-table th, .result-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.result-table th {
+    color: #0166ff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.result-table td {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.result-table tr:last-child td {
+    border-bottom: none;
+}
+
+.result-table tr:hover {
+    background-color: #f9fbff;
+    transition: background 0.2s ease;
+}
+
+/* subtle highlight for numeric score cells */
+.result-table td:nth-child(2) {
+    text-align: right;
+    font-weight: 500;
+    color: #0052cc;
+}

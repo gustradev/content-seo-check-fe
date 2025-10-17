@@ -1,0 +1,50 @@
+🚀 1. Initialize Git in your frontend project folder
+
+Make sure you’re inside your frontend directory:
+
+cd X:\Website\content-seo-check-fe
+
+
+Then initialize Git:
+
+git init
+
+🧩 2. Add your remote repository
+
+Connect to your GitHub repo:
+
+git remote add origin https://github.com/gustradev/content-seo-check-fe.git
+
+
+If you had a previous remote and want to overwrite it:
+
+git remote set-url origin https://github.com/gustradev/content-seo-check-fe.git
+
+📦 3. Add all files
+git add .
+
+
+git remote set-url origin https://github.com/gustradev/content-seo-check-fe.git
+
+git remote -v
+
+
+
+You can verify what’s being added:
+
+git status
+
+✍️ 4. Commit your changes
+git commit -m "Initial commit: Content SEO Check Frontend v1.0"
+
+☁️ 5. Push to GitHub
+
+If the repo is empty (no branches yet):
+
+git branch -M main
+git push -u origin main
+
+
+If it already has a main branch:
+
+git push origin main

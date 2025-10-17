@@ -127,7 +127,7 @@ analyzeBtn.addEventListener('click', async () => {
 
     try {
         // 4. API Call
-        const res = await fetch('/api/analyze', {
+         const res = await fetch('http://127.0.0.1:5000/analyze', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
@@ -148,17 +148,35 @@ analyzeBtn.addEventListener('click', async () => {
         progressBar.classList.add('hidden');
 
         // 7. Display Results (SUCCESS)
-        resultContent.innerHTML = `
-            <h2>Analysis Report</h2>
-            <div><strong>Version:</strong> ${data.version}</div>
-            <div><strong>Keywords:</strong> ${data.keywords.join(', ')}</div>
-            <div><strong>Readability:</strong> ${data.readability}%</div>
-            <div><strong>Semantic Score:</strong> ${(data.semantic_score * 100).toFixed(1)}%</div>
-            <h3>Recommendations:</h3>
-            <ul>
-                ${data.recommendations.map((r, i) => `<li style="--i:${i}">${r}</li>`).join('')}
-            </ul>
-        `;
+// 7. Display Results (SUCCESS)
+resultContent.innerHTML = `
+    <h2>Analysis Report</h2>
+    <div class="report-meta">
+        <div><strong>Version:</strong> ${data.version}</div>
+        <div><strong>Mode:</strong> ${data.mode}</div>
+        <div><strong>Factors Analyzed:</strong> ${data.factors_analyzed}</div>
+        <div><strong>Readability:</strong> ${data.readability}%</div>
+        <div><strong>Semantic Score:</strong> ${(data.semantic_score * 100).toFixed(1)}%</div>
+    </div>
+
+    <h3 style="margin-top:20px;">Detailed Results:</h3>
+    <table class="result-table">
+        <thead>
+            <tr>
+                <th>Factor</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${data.results.map(r => `
+                <tr>
+                    <td>${r.factor}</td>
+                    <td>${r.score}</td>
+                </tr>
+            `).join('')}
+        </tbody>
+    </table>
+`;
 
         // Trigger fade-in
         setTimeout(() => resultContent.classList.add('visible'), 50);
