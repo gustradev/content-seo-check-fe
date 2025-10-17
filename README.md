@@ -1,22 +1,22 @@
 # 🧠 Content SEO Check (Frontend)
-
+---
 **Content SEO Check** is a hybrid-engine optimization tool that combines traditional SEO with **GEO (Generative Engine Optimization)**.  
 This frontend is built with **Node.js + Express**, providing an elegant, fast UI for analyzing and improving content performance.
 
 ---
 
 ## 🚀 Features
-
+---
 - Clean and responsive UI
 - Real-time content analysis with animated loader
 - Mock API for development
 - Ready to connect with the backend “core engine” (Python-based)
 - Built with Express, Axios, and modern JavaScript
-
 ---
 
-## 🧩 Requirements
 
+## 🧩 Requirements
+---
 Before running this project, make sure you have the following installed:
 
 | Requirement | Minimum Version | Notes |
@@ -29,7 +29,8 @@ Before running this project, make sure you have the following installed:
 
 ---
 
-#### Project Structure Rules
+
+### Project Structure Rules
 ```
 content-seo-check-fe/
 ├── public/                 # Static frontend files
@@ -48,11 +49,10 @@ content-seo-check-fe/
 ├── package.json            # Node dependencies & scripts
 └── README.md               # Project info & instructions
 ```
----
+
 
 ## ⚙️ Setup Instructions
-
-
+---
 ```bash
 1️⃣ Install dependencies
 npm install
