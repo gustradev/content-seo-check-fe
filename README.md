@@ -52,8 +52,9 @@ content-seo-check-fe/
 
 ## ⚙️ Setup Instructions
 
-1️⃣ Install dependencies
+
 ```bash
+1️⃣ Install dependencies
 npm install
 
 2️⃣ Run the development server
@@ -99,5 +100,4 @@ Ida Bagus Wisnu Suputra
 MIT License © 2025 — Ida Bagus Wisnu Suputra
 
 ---
-```
-Would you like me to add a **“Contributing”** section next (so later when you make the backend repo, collaborators can follow your workflow)?
+

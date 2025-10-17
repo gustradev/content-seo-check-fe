@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content SEO Check | Hybrid Engine Optimization</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Hybrid Check | Hybrid Engine Optimization</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-  <header>
-    <h1>🧠 Content SEO Check</h1>
-    <p>Analyze your content with AI-driven SEO & GEO insights</p>
-  </header>
+  <header>
+    <h1>🧠 Content Hybrid Check</h1>
+    <p>Analyze your content with AI-driven SEO & GEO insights</p>
+  </header>
 
-  <main>
-  <div id="progressBar" class="hidden">
-    <div id="progress"></div>
-  </div>
+  <main>
+        <div class="mode-selector">
+      <label>
+        <input type="radio" name="mode" value="text" checked>
+        Audit Text
+      </label>
+      <label>
+        <input type="radio" name="mode" value="url">
+        Audit URL
+      </label>
+    </div>
 
-  <textarea id="contentInput" placeholder="Paste your content here..."></textarea>
-  <button id="analyzeBtn">Analyze Content</button>
+        <div id="text-input">
+      <textarea id="contentInput" placeholder="Paste your content here (min 50 chars)..."></textarea>
+    </div>
 
-  <section id="result" class="hidden">
-    <div class="loader hidden" id="loader"></div>
-    <div id="resultContent"></div>
-  </section>
-</main>
+        <div id="url-input" style="display:none;">
+      <input type="url" id="urlInput" placeholder="Enter the content URL (e.g., https://example.com/article)" />
+    </div>
 
+    <button id="analyzeBtn">Run Analysis</button>
 
-  <footer>
-    <p>© 2025 <a href="https://gustradev.com/wisnusuputra" target="_blank">Ida Bagus Wisnu Suputra</a></p>
-  </footer>
+        <div id="progressBar" class="hidden">
+      <div id="progress"></div>
+    </div>
 
-  <script src="app.js"></script>
+    <section id="result" class="hidden">
+      <div class="loader hidden" id="loader"></div>
+      <div id="resultContent"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <a href="https://gustradev.com/wisnusuputra" target="_blank">gustradev</a></p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
