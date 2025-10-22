@@ -48,3 +48,9 @@ git push -u origin main
 If it already has a main branch:
 
 git push origin main
+
+
+git add .
+git commit -m "Initial commit for Content FE"
+git branch -M main
+git push -u origin main

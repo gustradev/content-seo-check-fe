@@ -93,7 +93,7 @@ analyzeBtn.addEventListener('click', async () => {
     await startProgress();
 
     try {
-        const res = await fetch('http://192.168.1.6:5000/analyze', {
+        const res = await fetch('https://web-production-ecfc0.up.railway.app/analyze', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
