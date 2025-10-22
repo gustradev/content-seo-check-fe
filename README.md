@@ -14,7 +14,6 @@ This frontend is built with **Node.js + Express**, providing an elegant, fast UI
 - Built with Express, Axios, and modern JavaScript
 ---
 
-
 ## 🧩 Requirements
 ---
 Before running this project, make sure you have the following installed:
@@ -29,8 +28,7 @@ Before running this project, make sure you have the following installed:
 
 ---
 
-
-### Project Structure Rules
+#### Project Structure Rules
 ```
 content-seo-check-fe/
 ├── public/                 # Static frontend files
@@ -50,8 +48,7 @@ content-seo-check-fe/
 └── README.md               # Project info & instructions
 ```
 
-
-## ⚙️ Setup Instructions
+#### ⚙️ Setup Instructions
 ---
 ```bash
 1️⃣ Install dependencies
@@ -59,7 +56,7 @@ npm install
 
 2️⃣ Run the development server
 npm run dev
-
+```
 
 The app will be available at http://localhost:3000
 
@@ -79,14 +76,17 @@ Language: JavaScript (Node.js)
 HTTP Client: Axios
 
 Dev Tools: Nodemon, dotenv
+---
 
-🧠 Roadmap
-
+### 🧠 Roadmap
+---
 ✅ v1 — Static frontend + mock API
 🔄 v2 — Connect to content-seo-check-core-engine (Python backend)
 🔮 v3 — Deploy full-stack hybrid GEO+SEO analysis engine
 
-👨‍💻 Author
+---
+
+# 👨‍💻 Author
 
 Ida Bagus Wisnu Suputra
 💼 LinkedIn
@@ -100,4 +100,4 @@ Ida Bagus Wisnu Suputra
 MIT License © 2025 — Ida Bagus Wisnu Suputra
 
 ---
-
+---
